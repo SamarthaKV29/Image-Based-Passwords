@@ -1,0 +1,489 @@
+@charset "utf-8";
+/* CSS Document */
+*, * * {
+	padding-right: -1px;
+}
+html, body {
+	height: 100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+#upload_imagepass table.grxd td, #upload_imagepass table.grxd, #upload_imagepass table.grxd td tr{
+	border:thin solid #006;	
+}
+body {
+	background-color: #F9F9F9;
+	font-family: "Segoe UI", "Segoe UI Web Regular", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif;
+}
+#footer li a:hover{
+	text-decoration:none;
+	border-bottom:medium solid #09F;
+}
+#footer li a:active{
+	text-decoration:none;
+	border-bottom:thick solid #09F;
+	font-weight:bold;
+}
+hr {
+	margin: 20px 0px;
+	border-right: 0px none;
+	border-left: 0px none;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-webkit-border-top-colors: none;
+	-webkit-border-right-colors: none;
+	-webkit-border-bottom-colors: none;
+	-webkit-border-left-colors: none;
+	border-image: none;
+	border-width: 1px 0px;
+	border-style: solid none;
+	border-color: #EEE;
+}
+#inner_body {
+	margin: 0% 8%;
+	padding: 1px 10px 1px 15px;
+	border-right: 1px solid #E6E6E6;
+	border-width: 5px 1px 1px;
+	border-style: solid;
+	border-color: #5BB75B #E6E6E6 #E6E6E6;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	background-color: #FFF;
+	box-shadow: 0px 1px 3px rgba(34, 25, 25, 0.4);
+}
+#blanket {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;  /* the background          */
+	filter: alpha(opacity=50);   /* Internet Explorer       */
+	-moz-opacity: 0.75;           /* Mozilla 1.6 and below   */
+	opacity: 0.75;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 300000;
+}
+.subdivblanket {
+	width: 90%;
+	height:auto;
+	min-height:400px;
+	left: 2%;
+	top: 30px;
+	position: absolute;
+	-webkit-box-shadow: 0 4px 16px rgba(0,0,0,.2);
+	box-shadow: 0 4px 16px rgba(0,0,0,.2);
+	background: #fff;
+	background-clip: padding-box;
+	border: 1px solid #acacac;
+	border: 1px solid rgba(0,0,0,.333);
+	outline: 0;
+	z-index: 300000;
+	display: none;
+	padding: 15px;
+	padding-left: 20px;
+	text-transform: capitalize;
+}
+<!--
+------Login sign in css ----
+-->
+.flipflop {
+ position: fixed;
+ top: 0px;
+ width: 960px;
+ height: 100px;
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-bottom: 10px;
+ background-color: #FFF;
+ box-shadow: 0px 0px 4px 2px #A0A0A4;
+ color: #2A1F00;
+ border-bottom: medium solid #00BF55;
+ transition: height 0.3s ease 0s;
+}
+header .logo {
+	color: #D41F00;
+	width: 150px;
+	height: 50px;
+	padding-left: 50px;
+	padding-top: 10px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 20px;
+	background-image: url("images/lolo.png");
+	background-size: 50px 50px;
+	background-position: 10px 5px;
+	background-repeat: no-repeat;
+	text-shadow: 1px 1px 2px #E4E4E4;
+	transition: all 0.3s ease 0s;
+}
+a.tsbut {
+	height: auto;
+	font-size: normal;
+	text-decoration: none;
+}
+#headerdiv ul {
+	list-style: none;
+}
+#headerdiv ul li {
+	display: inline;
+	margin-right: 15px;
+}
+.tsbut {
+	display: inline-block;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	text-align: center;
+	border: none;
+	background-color: #0066FF;
+	width: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	-webkit-transition: font-size, color, background-color 2s ease;
+	-moz-transition: font-size, color, background-color 2s ease;
+	-ms-transition: font-size, color, background-color 2s ease;
+	-o-transition: font-size, color, background-color 2s ease;
+	transition: font-size, color, background-color 2s ease;
+}
+.tsbut:hover {
+	cursor: pointer;
+	font-size: 18px;
+	background-color: #FC0;
+	color: rgba(0,0,0,1);
+	-webkit-transition: font-size, color, background-color 2s ease;
+	-moz-transition: font-size, color, background-color 2s ease;
+	-ms-transition: font-size, color, background-color 2s ease;
+	-o-transition: font-size, color, background-color 2s ease;
+	transition: font-size, color, background-color 2s ease;
+}
+#loginsignup_div {
+	width: 70%;
+	height: auto;
+	min-height:400px;
+	margin-left: 8%;
+	margin-right: auto;
+	padding-bottom:200px;
+}
+#loginsignup_div nav {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+#loginsignup_div nav ul, .option_list ul {
+	list-style: none;
+	list-style-type: none;
+	display: inline;
+}
+#loginsignup_div nav ul li, .option_list ul li {
+	float: left;
+	text-align: center;
+	margin-right: 30px;
+	width: auto;
+}
+#loginsignup_div nav ul li:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+#loginsignup_div .loginsigninblanket ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#loginsignup_div .loginsigninblanket ul li {
+	margin-bottom: 20px;
+}
+#loginsignup_div .loginsigninblanket ul li .tstb {
+	width: 200px;
+	height: 30px;
+}
+.ulsignform {
+	list-style: none;
+	list-style-type: none;
+	display: list-item;
+	font-size: 16px;
+	
+}
+
+#login_form {
+	margin-left: 100px;
+}
+.divimage_select {
+	padding-bottom:200px;
+}
+.divimage_select ul {
+	padding-bottom:200px;
+}
+.divimage_select ul li {
+	float: left;
+	text-align: center;
+	margin-right: 30px;
+	width: auto;
+}
+.divimage_select ul li img:hover {
+	cursor: pointer;
+}
+.divimage_select ul li img {
+	float:left;
+}
+.border-highlight {
+box-shadow: 0px 0px 2px 5px rgba(153,0,0,1);
+}
+.close_login {
+	background: url(images/base.png) no-repeat scroll -274px 0px transparent;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	cursor: pointer;
+	width: 41px;
+	height: 41px;
+}
+.div_submit {
+	text-transform: none;
+	text-align: center;
+}
+.div_submit a {
+	color: #06f;
+}
+#div_submitlogin {
+	top: 50px;
+}
+#project p {
+	margin-bottom: 20px;
+	font-size: 21px;
+	font-weight: 200;
+	line-height: 30px;
+	text-align: center;
+	font: 17px/1.4 "Signika", "lucida grande", sans-serif;
+}
+/*****Section ******/
+
+#seminarSel {
+	padding-left: 40px;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+}
+.loginlogseminar_click, .nologseminar_click {
+	text-decoration: none;
+signu  color:#09f;
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+}
+.loginlogseminar_click:hover, .nologseminar_click:hover {
+	text-decoration: none;
+	border-bottom: medium solid rgba(255,102,0,1);
+	text-shadow: 0px 0px 1px #666666;
+	cursor: pointer;
+	font-size: 18px;
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+}
+section {
+	min-height: 100%;
+	margin-bottom: -0px;
+	padding-bottom: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+table>td {
+	border: 1px solid #dfdfdf;
+	padding: 0;
+	margin: 0;
+}
+table.grxd {
+	width: 100%;
+	height: 100%;
+}
+.div_content {
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #fff;
+}
+.div_content .option_list ul, #upload_div ul {
+	list-style: none;
+}
+.div_content .option_list ul li, #upload_div ul li {
+	display: inline;
+	margin-right: 30px;
+}
+#upload_div ul li input {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.selcoordinates {
+	height: 30px;
+	width: 80px;
+	text-align: center;
+}
+#upload_imagepass, #download_imagepass, .seminaroptions {
+	width: 200px;
+	height: 30px;
+}
+#selectImage {
+	padding: 5px;
+	position: relative;
+	bottom: 0px;
+	width: 414px;
+	border-radius: 10px;
+}
+.submit, .upload_seminar {
+	font-size: 16px;
+	background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+	border: 1px solid #e5a900;
+	color: #4E4D4B;
+	font-weight: bold;
+	cursor: pointer;
+	width: auto;
+	padding: 5px;
+	border-radius: 5px;
+}
+.upload_seminar:hover {
+	background: linear-gradient(#ffff00 5%, #ffff7f 100%);
+}
+}
+outline: none;
+}
+.submit:hover {
+	background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+}
+#file {
+	color: red;
+	padding: 5px;
+	border: 5px solid #8BF1B0;
+	background-color: #8BF1B0;
+	margin-top: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 15px #626F7E;
+	width: 72%;
+}
+#message {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#success {
+	color: green;
+}
+#invalid {
+	color: red;
+}
+#line {
+	margin-top: 10px;
+}
+#error {
+	color: red;
+}
+#error_message {
+	color: blue;
+}
+#loading {
+	display: none;
+	position: absolute;
+	top: 135px;
+	left: 450px;
+	font-size: 25px;
+}
+.password_patterns {
+	display: none;
+}
+.seminar_noshow, #loginsignup_div, .loginsigninblanket {
+	display: none;
+}
+.numpass1 {
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	border: 1px solid #c1c1c1;
+	height: 70px;
+	width: 820px;
+}
+.numpass1 ul, .numpass ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.numpass1 ul li, .numpass ul li {
+	display: inline;
+	margin-right: 10px;
+}
+.numpass1 ul li img {
+	padding: 2px;
+	padding-top: 10px;
+}
+#password ul li .close {
+	position: relative;
+	top: 2px;
+	right: 2px;
+	z-index: 100;
+	background-color: #FFF;
+	padding: 5px 2px 2px;
+	color: #000;
+	font-weight: bold;
+	cursor: pointer;
+	opacity: .2;
+	text-align: center;
+	font-size: 22px;
+	line-height: 10px;
+	border-radius: 50%;
+}
+#password ul li:hover .close {
+	opacity: 1;
+}
+#usertable {
+	width: 80%;
+}
+#usertable tr td {
+	text-transform: capitalize;
+	border-bottom: 1px solid #c1c1c1;
+	text-align: center;
+	padding: 5px;
+}
+/******Foooter************/
+footer {
+	margin-top: 10px;
+	border-top: 2px solid #D6D6D6;
+	height: 50px;
+	font-size: 14px;
+	position: relative;
+	z-index: 1;
+}
+footer ul li {
+	display: inline;
+	width: auto;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+footer ul li a {
+	color: #434343;
+	text-decoration: none;
+}
+footer ul li a:hover {
+	text-decoration: underline;
+}
+/************Circle Image***************/
+
+.jcrop-holder div {
+	-webkit-border-radius: 50% !important;
+	-moz-border-radius: 50% !important;
+	border-radius: 50% !important;
+}
