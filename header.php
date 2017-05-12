@@ -16,7 +16,7 @@
 		<nav class="flipflop" id="header">
 			<h3 class="logo">Image Based Passwords</h3>
 				<ul class="listh">
-					<li>Demo</li>
+					<li><a href="techseminar/">Demo</a></li>
 					<li><a href="#basic">Basic</a></li>
 					<li><a href="#circle">Circle Selection</a></li>
 					<li><a href="#grid">Grid</a></li>
