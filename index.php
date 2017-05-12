@@ -50,12 +50,7 @@
 		<img alt="Image Passwords" class="side-image" height="300" src="IMG/Cupld.png" style="margin-left:50px;" width="400"> <img alt="Image Passwords" class="side-image" height="300" src="IMG/Cdwnld.png" width="400"></div>
 
 
-		<div class="section" id="numeric">
-		<h1 class="side-heading">Number pattern</h1>
-
-
-		<p class="side-subtitle">In this type, we use number buttons to input the password.</p>
-		<img alt="Image Passwords" class="side-image" height="300" src="IMG/Cupld.png" style="margin-left:50px;" width="400"> <img alt="Image Passwords" class="side-image" height="300" src="IMG/Cdwnld.png" width="400"></div>
+		
 
 
 		<div class="section" id="grid">
@@ -63,7 +58,7 @@
 
 
 		<p class="side-subtitle">In this type, we plot a grid over an image where the user has to select a pattern of grid cells while uploading. Later, he must use the same pattern on the grid to access the file uploaded.</p>
-		<img alt="Image Passwords" class="side-image" height="300" src="img/gridimg.png" width="400">
+		<img alt="Image Passwords" class="side-image" height="300" src="IMG/gridimg.png" width="400">
 		</div>
 	</div>
 

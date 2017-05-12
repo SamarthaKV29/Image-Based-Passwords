@@ -20,7 +20,6 @@
 					<li><a href="#basic">Basic</a></li>
 					<li><a href="#circle">Circle Selection</a></li>
 					<li><a href="#grid">Grid</a></li>
-					<li><a href="#numeric">Numeric</a></li>
 				</ul>
 		</nav>
 	</header>
