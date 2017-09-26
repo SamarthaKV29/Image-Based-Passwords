@@ -8,7 +8,7 @@
 <link href="body.css" rel="stylesheet" type="text/css">
 <link href="jquery.Jcrop.min.css" type="text/css">
 </head>
-<!---------------Body ----------->
+<!-- Body -->
 <body>
 <div id="inner_body">
   <header>
@@ -36,9 +36,9 @@ else if(isset($_SESSION['username'],$_SESSION['login_string']))
   <footer>
     <?php include('footer.php');?>
   </footer>
-  <!------Hidden divs------------->
+  <!--  Hidden divs -->
   <div id="view_div" class="subdivblanket"></div>
-  <!----------------Upload------->
+  <!-- Upload-->
   <div id="upload_div" class="subdivblanket">
     <div class="close_login"></div>
     <h2>Upload File</h2>
@@ -86,7 +86,7 @@ else if(isset($_SESSION['username'],$_SESSION['login_string']))
   <p class="coordinates" id="ucoordinate2"><label>Second set Of Coordinates :- </label> <input type="text" class="selcoordinates"   readonly id="uselleft2"  size="5" />&nbsp;&nbsp;<input type="text" readonly class="selcoordinates"    id="useltop2" size="5" /></p>
    <p class="coordinates" id="ucoordinate3"><label>Third set Of Coordinates :- </label> <input type="text" class="selcoordinates"   readonly id="uselleft3"  size="5" />&nbsp;&nbsp;<input type="text" readonly class="selcoordinates"    id="useltop3" size="5" /></p>
     <p class="coordinates" id="ucoordinate4"><label>Fourth set Of Coordinates :- </label> <input type="text" class="selcoordinates"   readonly id="uselleft4"  size="5" />&nbsp;&nbsp;<input type="text" readonly class="selcoordinates"    id="useltop4" size="5" /></p>
-    
+
     <p><button id="unextbutton" class="tsbut">Next Coordinate </button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="tsbut"  id="upreviousbutton">Previous Coordinate</button></p> */?>
       </div>
       <div id="upattern2" class="password_patterns">
@@ -119,8 +119,8 @@ else if(isset($_SESSION['username'],$_SESSION['login_string']))
     </form>
     <h4 id='loading' >Uploading.. Please Wait</h4>
   </div>
-  
-  <!--------Download --------------------->
+
+  <!-- Download -->
   <div id="download_div" class="subdivblanket">
     <div class="close_login"></div>
     <h2>Download File</h2>
@@ -219,7 +219,7 @@ function showUsers($dbc)
 			else
 			{
 				echo "<td>Blocked&nbsp;<a href=loginstatus.php?activate=".$row_fetch[3].">Activate</a></td>";
-				
+
 			}
 			echo "<td>";
 			$a="SELECT count(uploadid) FROM fileupload WHERE userid='$row_fetch[3]'";
@@ -228,29 +228,29 @@ function showUsers($dbc)
 			{
 				$row_load=@mysqli_fetch_array($b);
 				echo $row_load[0]."&nbsp;Seminar added";
-				
-					
+
+
 			}
 			else
 			{
 				echo "No seminar added";
 			}
 			echo "</td></tr>";
-			
+
 		}
 		echo "</table>";
-			
-		
+
+
 	}
 	else
 	{
-		echo '<H3 align=center>No users have registered yet</h3>'; 
+		echo '<H3 align=center>No users have registered yet</h3>';
 	}
 	@mysqli_close($dbc);
 }
 function seminarTopics($subject,$dbc)
 {
-	
+
 		$q="SELECT uploadid,filename from uploaddetails WHERE subject='$subject' ORDER BY filename";
 		$r=@mysqli_query($dbc,$q);
 		if(@mysqli_num_rows($r) > 0)
@@ -262,10 +262,10 @@ function seminarTopics($subject,$dbc)
 			{
 				foreach(explode(",",$row_fetch[1]) as $list )
 				{
-				
+
 					ucfirst($list);
 					$firstletter=substr($list,0,1);
-					
+
 					if($firstletter!== $currentLetter)
 					{
 						echo "<br>".ucfirst($firstletter)."<br>--<br>";
@@ -273,7 +273,7 @@ function seminarTopics($subject,$dbc)
 					}
 					$seminar=$row_fetch[1];//pathinfo($row_fetch[1],PATHINFO_FILENAME);
 					$seminar=ucwords(strtolower($seminar));
-				
+
 					echo "<span class=loginlogseminar_click id='$row_fetch[0]'>";  echo $seminar;  echo "</span>";
 				}
 				echo "<br>";
@@ -284,31 +284,31 @@ function seminarTopics($subject,$dbc)
 		{
 			echo '<h3 align="center">No seminar topics have been uploaded</h3>';
 		}
-		
-	
+
+
 	@mysqli_close($dbc);
 }
 
 function showseminartopics($subject,$dbc)
 {
-	
+
 	$t="SELECT `uploadid`, `filename` FROM `uploaddetails` WHERE subject='$subject' ORDER BY filename";
 	$y=@mysqli_query($dbc,$t);
 	if(@mysqli_num_rows($y) >0)
 	{
-		
+
 		echo "<h3 id=seminarheader>Files Uploaded<hr/></h3>";
 			echo "<div id=seminarSel>";
 		$currentLetter=null;
 		while($row_fetch=@mysqli_fetch_array($y))
 		{
-			
+
 			foreach(explode(",",$row_fetch[1]) as $list )
 			{
-				
+
 				ucfirst($list);
 				$firstletter=substr($list,0,1);
-				
+
 				if($firstletter!== $currentLetter)
 				{
 					echo "<br>".ucfirst($firstletter)."<br>--<br>";
@@ -317,11 +317,11 @@ function showseminartopics($subject,$dbc)
 				//$seminar=pathinfo($row_fetch[1],PATHINFO_FILENAME);
 				$seminar=$row_fetch[1];//pathinfo($row_fetch[1],PATHINFO_FILENAME);
 				$seminar=ucwords(strtolower($seminar));
-				
+
 				echo "<span class=nologseminar_click >";  echo $seminar;  echo "</span>";
 			}
 			echo "<br>";
-		
+
 		}
 		echo "</div>";
 	}
@@ -329,7 +329,7 @@ function showseminartopics($subject,$dbc)
 	{
 		echo "<h3 align=center>No files have been uploaded</h3>";
 	}
-	
+
 	@mysqli_close($dbc);
 }
 
